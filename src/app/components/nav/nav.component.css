@@ -1,0 +1,16 @@
+.menu-options {
+  background: black;
+}
+.options {
+  color: blanchedalmond;
+  font-size: 25px;
+}
+.form-control {
+  border-radius: 0;
+  background: #eeeeeead;
+  opacity: unset;
+}
+.input-group-text {
+  background: #dedede;
+  border-radius: 0;
+}
