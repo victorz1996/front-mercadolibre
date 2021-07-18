@@ -1,3 +1,10 @@
+# Tecnologias usadas
+
+Tecnologias usadas parala cracion de la aplicacion:
+-Angular 12
+-Bootstrap v5
+-PrimeNG
+-Fontawesome Icons
 # FrontMercadolibre
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
