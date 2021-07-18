@@ -3,7 +3,7 @@
 </div>
 <div *ngIf="!loading">
   <div *ngIf="products.length" class="row mx-5 pt-5 pb-5">
-    <div *ngFor="let product of products" class="col-md-3">
+    <div *ngFor="let product of products" class="col-md-3 mt-2">
       <app-card [product]="product"></app-card>
     </div>
   </div>
