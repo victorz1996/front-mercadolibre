@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'front-mercadolibre';
+  title:string = 'front-mercadolibre';
+  searchText:string = ''
+
+  reciveSearch(event:string){
+    this.searchText = event
+  }
 }

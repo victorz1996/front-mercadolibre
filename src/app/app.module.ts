@@ -14,6 +14,9 @@ import { CardComponent } from './components/card/card.component';
 
 // UI components
 import {CarouselModule} from 'primeng/carousel';
+import { FooterComponent } from './components/footer/footer.component';
+import { SearchComponent } from './components/search/search.component';
+import { LoadingComponent } from './components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import {CarouselModule} from 'primeng/carousel';
     CategotiesComponent,
     MoreSearchComponent,
     CardComponent,
+    FooterComponent,
+    SearchComponent,
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,

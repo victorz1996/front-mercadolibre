@@ -28,6 +28,7 @@
             placeholder="Buscar aquí producto"
             aria-label="buscar aqui producto"
             aria-describedby="basic-addon2"
+            (keyup)="search($event)"
           />
           <span class="input-group-text" id="basic-addon2">
             <img height="20px" src="/assets/img/search-icon.png" alt="search" />

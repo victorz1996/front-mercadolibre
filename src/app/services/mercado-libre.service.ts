@@ -12,17 +12,17 @@ export class MercadoLibreService {
   codeCountry: string = 'MCO';
   apiUrl: string = 'https://api.mercadolibre.com';
   constructor(private http: HttpClient) {}
-  // Metodo para obtener lista de productos mas buscados o tendencias, para este caso seran tendencias en ropa y accesorios
-  getMoreShearch() {
-    return this.http.get(
-      `${this.apiUrl}/trends/${this.codeCountry}/${this.codeCategory}`
-    );
-  }
 
-  getProducts(keyword: string) {
-    return this.http.get(
-      `${this.apiUrl}/products/search?status=active&site_id=${this.codeCountry}&q=${keyword}`
-    );
+  getProductsBySearch(keyword: string) {
+    return this.http
+      .get(
+        `${this.apiUrl}/sites/${this.codeCountry}/search?category=${this.codeCategory}&q=${keyword}`
+      )
+      .pipe(
+        map((data: any) => {
+          return data.results;
+        })
+      );
   }
 
   getProductsByCategory() {
@@ -31,8 +31,8 @@ export class MercadoLibreService {
         `${this.apiUrl}/sites/${this.codeCountry}/search?category=${this.codeCategory}`
       )
       .pipe(
-        map((data:any) => {
-          return data.results
+        map((data: any) => {
+          return data.results;
         })
       );
   }

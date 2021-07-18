@@ -1,34 +1,24 @@
-<p-carousel
-  [value]="products"
-  [numVisible]="4"
-  [numScroll]="3"
-  [circular]="false"
->
-  <ng-template pTemplate="header"> </ng-template>
-  <ng-template let-product pTemplate="item">
-    <div class="card h-100">
-      <img
-        [src]="product.thumbnail"
-        height="200px"
-        class="card-img-top"
-        alt="img"
-      />
-      <div class="card-body">
-        <h5 class="card-title">{{ product.title }}</h5>
-        <div class="row card-text">
-          <div class="col">
-            <p class="price">{{ product.price | currency }}</p>
-          </div>
-          <div class="col">
-            <p class="original-price">{{ product.original_price| currency }}</p>
-          </div>
-        </div>
+<div class="card h-100">
+  <img
+    [src]="product.thumbnail"
+    height="200px"
+    class="card-img-top"
+    alt="img"
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ product.title }}</h5>
+    <div class="row card-text">
+      <div class="col">
+        <p class="price">{{ product.price | currency }}</p>
       </div>
-      <div class="card-footer">
-        <div class="d-grid gap-2">
-          <button class="btn btn-dark" type="button">Agregar al carrito</button>
-        </div>
+      <div class="col">
+        <p class="original-price">{{ product.original_price | currency }}</p>
       </div>
     </div>
-  </ng-template>
-</p-carousel>
+  </div>
+  <div class="card-footer">
+    <div class="d-grid gap-2">
+      <button class="btn btn-dark" type="button"><fa-icon style="margin-right: 1em;" [icon]="faShoppingCart"></fa-icon>Agregar al carrito</button>
+    </div>
+  </div>
+</div>

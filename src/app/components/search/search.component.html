@@ -1,0 +1,13 @@
+<div class="pt-5 pb-5" *ngIf="loading">
+    <app-loading></app-loading>
+</div>
+<div *ngIf="!loading">
+  <div *ngIf="products.length" class="row mx-5 pt-5 pb-5">
+    <div *ngFor="let product of products" class="col-md-3">
+      <app-card [product]="product"></app-card>
+    </div>
+  </div>
+  <div class="pt-5 pb-5" *ngIf="!products.length">
+    <h2 class="text-center">No se encontraron resultados para su busqueda</h2>
+  </div>
+</div>
