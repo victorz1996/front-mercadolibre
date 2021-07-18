@@ -1,0 +1,18 @@
+.price{
+    font-weight: bold;
+    color: indigo;
+    align-self: flex-end;
+
+}
+.original-price{
+    font-weight: bold;
+    text-decoration-line: line-through;
+    align-self: flex-end;
+}
+.card-footer {
+    padding-top: 0;
+}
+.card-body{
+    padding-bottom: 0;
+    display: grid;
+}

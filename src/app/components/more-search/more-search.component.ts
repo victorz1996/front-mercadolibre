@@ -9,12 +9,15 @@ import { MercadoLibreService } from 'src/app/services/mercado-libre.service';
 export class MoreSearchComponent {
   moreSearch: any = [];
   constructor(private mercadolibre: MercadoLibreService) {
-    this.getMoreShearched();
+    this.getProductsByCategory()
   }
-  getMoreShearched() {
-    this.mercadolibre.getMoreShearch().subscribe((resp: any) => {
-      if (resp && resp.length) {
-        const keywords: Array<string> = resp.map((item: any) => item.keyword);
+
+  getProductsByCategory() {
+    this.mercadolibre.getProductsByCategory().subscribe((res: any) => {
+      if (res) {
+        console.log(res, 'kakkakaka')
+        this.moreSearch = res
+
       }
     });
   }

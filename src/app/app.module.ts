@@ -12,6 +12,9 @@ import { CategotiesComponent } from './components/categoties/categoties.componen
 import { MoreSearchComponent } from './components/more-search/more-search.component';
 import { CardComponent } from './components/card/card.component';
 
+// UI components
+import {CarouselModule} from 'primeng/carousel';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +30,7 @@ import { CardComponent } from './components/card/card.component';
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
