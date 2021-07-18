@@ -17,7 +17,6 @@ export class SearchComponent implements OnChanges {
     if (this.text.length) {
       this.loading = true
       this.mercadolibre.getProductsBySearch(this.text).subscribe(item =>{
-        console.log(item,'datos')
         this.products = item
         this.loading = false
       });

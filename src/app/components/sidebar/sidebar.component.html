@@ -1,1 +1,24 @@
-
+<div
+  class="offcanvas offcanvas-start"
+  tabindex="-1"
+  id="offcanvasExample"
+  aria-labelledby="offcanvasExampleLabel"
+>
+  <div class="offcanvas-header d-flex justify-content-end">
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <ul class="list-group">
+          <li class="list-group-item" *ngFor="let item of menu">
+            <h6 style="font-weight: bold;text-align: left;">{{ item }}</h6>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>

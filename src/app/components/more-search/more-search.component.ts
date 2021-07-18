@@ -8,6 +8,13 @@ import { MercadoLibreService } from 'src/app/services/mercado-libre.service';
 })
 export class MoreSearchComponent {
   moreSearch: any = [];
+  responsiveOptions:Array<any> = [
+    {
+        breakpoint: '768px',
+        numVisible: 1,
+        numScroll: 1
+    }
+];
   constructor(private mercadolibre: MercadoLibreService) {
     this.getProductsByCategory();
   }

@@ -2,3 +2,19 @@
 body {
   margin-top: 8em;
 }
+.row {
+  --bs-gutter-x:0rem;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .mobile {
+    display: block;
+  }
+  .desptok {
+    display: none !important;
+  }
+}
