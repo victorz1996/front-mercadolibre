@@ -24,6 +24,7 @@ export class NavComponent {
   ];
   constructor() {}
 
+  // Metodo que emite los datos puesto en el input de busqueda
   search(e:any){
       this.emitSearch.emit(e.target.value)
   }

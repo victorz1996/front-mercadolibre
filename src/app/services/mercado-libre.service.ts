@@ -13,6 +13,7 @@ export class MercadoLibreService {
   apiUrl: string = 'https://api.mercadolibre.com';
   constructor(private http: HttpClient) {}
 
+  // Servicio para obtener productos por medio de busqueda
   getProductsBySearch(keyword: string) {
     return this.http
       .get(
@@ -24,7 +25,7 @@ export class MercadoLibreService {
         })
       );
   }
-
+  // Servicio para obtener productos por categoria
   getProductsByCategory() {
     return this.http
       .get(

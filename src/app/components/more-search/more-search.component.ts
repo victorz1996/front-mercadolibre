@@ -8,6 +8,7 @@ import { MercadoLibreService } from 'src/app/services/mercado-libre.service';
 })
 export class MoreSearchComponent {
   moreSearch: any = [];
+  // Array con opciones de responsive para el elemento carousel de PrimeNG
   responsiveOptions:Array<any> = [
     {
         breakpoint: '768px',
@@ -19,6 +20,7 @@ export class MoreSearchComponent {
     this.getProductsByCategory();
   }
 
+  // Metodo que llama el servicio para obtener productos por categoria
   getProductsByCategory() {
     this.mercadolibre.getProductsByCategory().subscribe((res: any) => {
       if (res) {

@@ -1,16 +1,22 @@
 <div>
+  <!-- Navbar component -->
   <app-nav (emitSearch)="reciveSearch($event)"></app-nav>
+  <!-- Vista al buscar productos -->
   <app-search [text]="searchText" *ngIf="searchText.length"></app-search>
   <div *ngIf="!searchText.length">
+    <!-- Banner component -->
     <app-banner></app-banner>
     <div>
+      <!-- Category components -->
       <app-categoties></app-categoties>
     </div>
     <div class="mt-5">
+      <!-- moreSearched component -->
       <app-more-search></app-more-search>
     </div>
   </div>
   <div class="mt-5">
+    <!-- Footer component -->
     <app-footer></app-footer>
   </div>
 </div>

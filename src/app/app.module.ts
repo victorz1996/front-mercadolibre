@@ -11,12 +11,12 @@ import { BannerComponent } from './components/banner/banner.component';
 import { CategotiesComponent } from './components/categoties/categoties.component';
 import { MoreSearchComponent } from './components/more-search/more-search.component';
 import { CardComponent } from './components/card/card.component';
-
-// UI components
-import {CarouselModule} from 'primeng/carousel';
 import { FooterComponent } from './components/footer/footer.component';
 import { SearchComponent } from './components/search/search.component';
 import { LoadingComponent } from './components/loading/loading.component';
+
+// UI components
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
   declarations: [

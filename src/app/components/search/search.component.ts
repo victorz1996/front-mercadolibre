@@ -13,6 +13,7 @@ export class SearchComponent implements OnChanges {
 
   constructor(private mercadolibre: MercadoLibreService) {}
 
+  // Metodo que llama el servicio de busqueda de productos por coincidencias
   getSearch() {
     if (this.text.length) {
       this.loading = true
